@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif|Playfair+Display&display=swap');
+body {
+    background-image: url("./bilder/the-beatles.jpg");
+    background-size: contain;
+    background-attachment: fixed;
+
+}
+h1 {
+   color: #ffffff;
+   font-size: 150px;
+   font-family: 'Playfair Display', serif;
+}
+h2 {
+    color: #ffffff;
+    font-size: 60pt;
+    font-family: 'Noto Serif', serif;
+}
+p {
+    color: #ffffff;
+    font-size: 35pt;
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    color: #ffffff; 
+    font-size: 25pt;
+    font-family: 'Noto Serif', serif;
+}
