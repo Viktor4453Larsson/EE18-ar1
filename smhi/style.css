@@ -1,0 +1,21 @@
+body {
+    border: 10px solid #DCDCDC;
+}
+table {
+width: 1500px;
+height: 1250px;
+border-collapse: collapse
+}
+tr{
+    border: 10px solid #DCDCDC;
+
+}
+th{
+    border: 10px solid #DCDCDC;
+}
+td{
+    border: 10px solid #DCDCDC;
+}
+img{
+    width: 10px;
+}
