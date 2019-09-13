@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis|Noto+Sans+KR&display=swap');
+h1 {
+ background: #f7055e; 
+ font-family: 'Dosis', sans-serif;
+
+}
+p {
+ background: #cccccc;
+ font-family: 'Noto Sans KR', sans-serif;
+}
+ul {
+
+}
+ul {
+
+}
+li { background: #f7055e
+
+}
+body {
+    background-image: url(./bilder/photo-1515879218367-8466d910aaa4.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
