@@ -1,0 +1,19 @@
+body {
+    background-image: url("./bilder/cropped-SEP-Pan_6x375.jpg");
+    background-size: cover;
+    background-position: 0 -100px;
+}
+h1 {
+    font: 30px sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 600px;
+    margin-left: 200px;
+}
+h2 {
+    font: 25px sans-serif;
+    font-weight: bold;
+    color: #ffffff;
+    margin-top: 50px;
+    margin-left: 200px;
+}

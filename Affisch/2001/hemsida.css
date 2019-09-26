@@ -1,0 +1,26 @@
+body {
+    
+   
+    background: #000000 url("./bilder/jorden123small.jpg") no-repeat  fixed center bottom;
+    background-size: 400px;
+}
+h1 {
+    color: #ffffff;
+    font: 80px; font-family: 'Audiowide', cursive;
+    margin: 200px auto 0 auto;
+    width: 800px;
+    text-align: center;
+    background-color: #556655;
+    border: 1px solid #ffffff;
+    padding: 40px;
+}
+h2 {
+    color: #ffffff;
+    margin: auto auto 0 auto;
+    text-align: center;
+    background-color: #565656;
+    width: 800px;
+    border: 1px solid #ffffff;
+    padding: 15px;
+    
+}
