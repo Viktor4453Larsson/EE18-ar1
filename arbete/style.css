@@ -12,22 +12,22 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 /* Utseende på sidan */
 .sida1 {
-    background: url("./bilder/pattern1.jpg")
+    background-image: url("./bilder/blacknwhite.jpg");
 }
 .sida2 {
-    background: url("./bilder/pattern2.jpg")
+    background-image: url("./bilder/dots.jpg");
 }
 .sida3 {
-    background: url("./bilder/pattern3.jpg")
+    background-image: url("./bilder/wallpaper.jpg");
 }
 .sida4 {
-    background: url("./bilder/pattern4.jpg")
+    background-image: url("./bilder/randomtriangle.jpg");
 }
 .sida5 {
-    background: url("./bilder/pattern5.jpg")
+    background-image: url("./bilder/colorsplash.jpg");
 }
 .sida6 {
-    background: url("./bilder/pattern6.jpg")
+    background-image: url("./bilder/pink.jpg");
 }
 /* Utseende på boxen */
 div {
@@ -51,4 +51,19 @@ a {
     font-size: 50px;
     color: black;
     text-decoration: none;
+}
+.div2 {
+    background: rgb(204, 15, 15);
+}
+.div3 {
+    background: rgba(15, 204, 113, 0.898);
+}
+.div4 {
+    background: rgb(245, 30, 241);
+}
+.div5 {
+    background: rgb(113, 113, 148);
+}
+.div6 {
+    background: rgb(179, 218, 38);
 }
