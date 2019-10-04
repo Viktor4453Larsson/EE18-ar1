@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text|Open+Sans+Condensed:300&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Utseende på sidan */
+body {
+background: url("./bilder/backgroundmoon.jpg");
+background-size: cover;
+background-attachment: fixed;
+}
+.kontainer {
+    font-family: 'Open Sans Condensed', sans-serif;
+    color: blue;
+    background: rgba(255, 255, 255, 0.503);
+    margin: auto;
+    width: 800px;
+    padding: 30px;
+}
+h1 {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #EE3F2B;
+    text-align: center;
+    font-size: 70px;
+}
+.intro {
+text-align: center;
+font-size: 25px;
+margin-top: 15px;
+}
+/* Utseende på rutorna */
+.ruta {
+  background: #000;
+  color: aliceblue;
+  margin-bottom: 8px;
+}
+img {
+width:375px;
+padding: 10px; 
+}
+.bildtext {
+
+}
+/* Utseende på sidfoten */
+.kalla {
+
+}

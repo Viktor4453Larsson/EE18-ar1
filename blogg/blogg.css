@@ -34,15 +34,18 @@ h1 {
     margin: 15px 0 15px 0;
     border-radius: 5px;
 }
-img {
+.bild {
     width: 100%;
+    padding: 5px; 
+    background: #FFF;
 }
 h2 {
     font-family: 'Squada One', cursive;
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .datum {
     font-family: 'Squada One', cursive; 
+    color: rgb(57, 12, 99);
 }
 p {
     font-family: 'Squada One', cursive;
