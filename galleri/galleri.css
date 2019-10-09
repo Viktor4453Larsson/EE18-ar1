@@ -10,6 +10,16 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
 }
+
+/* CSS clearfix mot box kollaps */
+.clearfix:after { 
+    content: "."; 
+    visibility: hidden; 
+    display: block; 
+    height: 0; 
+    clear: both;
+ }
+ 
 /* Utseende på sidan */
 body {
 background: url("./bilder/backgroundmoon.jpg");
@@ -39,7 +49,8 @@ margin-top: 15px;
 .ruta {
   background: #000;
   color: aliceblue;
-  margin-bottom: 8px;
+  margin-top: 30px;
+  border-radius: 5px;
 }
 img {
 width:375px;
@@ -47,6 +58,21 @@ padding: 10px;
 }
 .bildtext {
 
+}
+.vänster{
+float: left;
+margin-right: 10px;
+}
+.höger{
+float: right;
+margin-left: 10px;
+}
+.texthöger{
+    text-align: right;
+}
+hr {
+    clear: both;
+    visibility: hidden;
 }
 /* Utseende på sidfoten */
 .kalla {

@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Display|Finger+Paint&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+    background: rgb(240, 11, 190);
+}
+/* Utseende på sidan */
+body {
+width: 300px;
+padding: 50px;
+
+}
+div {
+width: 500px;
+margin: auto auto auto 400px;
+background-color: rgb(245, 35, 35);
+border-radius: 50px;
+}
+/* Textens utseende */
+h1 {
+    width: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+    color: rgb(241, 140, 16);
+    padding: 30px;
+}
+p {
+    width: 70px;
+    color: brown;
+    font-family: 'Finger Paint', cursive;
+    padding-bottom: 15px;
+}
+td {
+    color: brown;
+}
