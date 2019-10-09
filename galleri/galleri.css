@@ -56,9 +56,6 @@ img {
 width:375px;
 padding: 10px; 
 }
-.bildtext {
-
-}
 .vänster{
 float: left;
 margin-right: 10px;
@@ -76,5 +73,6 @@ hr {
 }
 /* Utseende på sidfoten */
 .kalla {
-
+margin: 20px 0;
+font-style: italic;
 }
