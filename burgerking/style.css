@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter|Liu+Jian+Mao+Cao&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+/* Sidans utseende */
+.kontainer{
+    font: 25px 'Bitter', serif;
+    color: #682F1C;
+    text-transform: uppercase;
+}
+
+/* Sidohuvudets utseende */
+.kontainer .sidhuvud {
+    display:grid;
+    grid-template-columns: 10% 90%;
+}
+.kontainer .sidhuvud img {
+margin-left: 15px;
+}
+.kontainer .sidhuvud ul{
+margin-top: 25px;
+text-align: right;
+margin-right: 50px;
+}
+.kontainer .sidhuvud li{
+display: inline;
+font-weight: bold;
+}
+.kontainer .sidhuvud li a{
+    color:#682F1C;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 25px;
+    padding: 10px 15px;
+}
+/* Sidans inehåll */
+.kontainer .rutnät {
+    display:grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    text-align: center;
+}
+.kontainer .rutnät .produkt h2{
+    font-family: 'Liu Jian Mao Cao', cursive;
+}
+.kontainer .rutnät .produkt img{
+width: 350px;
+}
+/* Bakgrundsfärger */
+.kontainer .ljus{
+    background: #FEF1E5;
+}
+.kontainer .mörk{
+    background: #EFDAC5;
+}
