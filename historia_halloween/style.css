@@ -10,7 +10,32 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 /* Hemsidans utseende */
-body {
+.backgrund1 {
+background-image: url("./bilder/start.jpg");
+background: contain;
+background-repeat: no-repeat;
+}
+.backgrund2 {
+    background-image: url("./bilder/pumpor.jpg");
+    background: contain;
+}
+.backgrund3 {
+    background-image: url("./bilder/history.jpg");
+    background: contain;
+}
+ul {
+
+}
+li {
+
+}
+div {
+
+}
+h1 {
+
+}
+p {
 
 }
 .meny {
