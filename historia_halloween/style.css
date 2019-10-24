@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Jomolhari|Roboto+Condensed&display=swap');
 /* Enkel CSS-reset */
 html {
     box-sizing: border-box;
@@ -11,49 +12,58 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 }
 /* Hemsidans utseende */
 .backgrund1 {
-background-image: url("./bilder/start.jpg");
-background: contain;
-background-repeat: no-repeat;
+    background-image: url("./bilder/start.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .backgrund2 {
     background-image: url("./bilder/pumpor.jpg");
-    background: contain;
+    background-size: cover;
 }
 .backgrund3 {
     background-image: url("./bilder/history.jpg");
-    background: contain;
+    background-size: cover;
 }
-ul {
-
+ul {padding: auto auto;
 }
 li {
-
+    padding: 12px;
 }
-div {
-
+.ruta {
+    width: 500px;
+    padding: 15px;
+    margin: 20px 925px auto auto;
+    background: grey;
+    font: 18px 'Roboto Condensed', sans-serif;
 }
 h1 {
-
+    text-align: center;
+    background: #444444;
+    padding: 5px 5px;
+    font: 20px 'Jomolhari', serif;
 }
 p {
-
+    padding: 15px;
+    background: #FFF;
+    margin: 10px 0;
 }
+/* Menys utseende */
 .meny {
-text-align: center;
-margin: 10 0 30 auto;
+    text-align: center;
+    margin: 50px 900px 0 0;
 }
- .meny li {
-list-style-type: none;
-display: inline;   
+.meny li {
+    list-style-type: none;
+    display: inline;
 }
- .meny a{
-    background: rgba(244, 172, 183, 1);
+.meny a {
+    background: rgb(235, 138, 11);
     padding: 7px;
     margin: 0 3px;
-    color: rgba(157, 129, 137, 1);
+    color: rgb(0, 0, 0);
     text-decoration: none;
     border-radius: 2px;
     box-shadow: 3px 3px 0 #FFF;
     width: 120px;
     display: inline-block;
-    }
+}
