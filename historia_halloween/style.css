@@ -19,12 +19,12 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
 .backgrund2 {
     background-image: url("./bilder/pumpor.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
 }
 .backgrund3 {
     background-image: url("./bilder/history.jpg");
     background-size: cover;
-}
-ul {padding: auto auto;
+    background-repeat: no-repeat;
 }
 li {
     padding: 12px;
@@ -32,9 +32,10 @@ li {
 .ruta {
     width: 500px;
     padding: 15px;
-    margin: 20px 925px auto auto;
+    margin: 20px auto auto;
     background: grey;
     font: 18px 'Roboto Condensed', sans-serif;
+    margin-left: 100px;
 }
 h1 {
     text-align: center;
@@ -42,18 +43,22 @@ h1 {
     padding: 5px 5px;
     font: 20px 'Jomolhari', serif;
 }
+/* Fakta till menyerna */
 p {
     padding: 15px;
     background: #FFF;
     margin: 10px 0;
 }
+.andrapbackgrund {
+    background: black;
+    padding: 10px 10px;
+}
 /* Menys utseende */
 .meny {
     text-align: center;
-    margin: 50px 900px 0 0;
+    margin: 50px 900px auto auto;
 }
 .meny li {
-    list-style-type: none;
     display: inline;
 }
 .meny a {
@@ -62,8 +67,11 @@ p {
     margin: 0 3px;
     color: rgb(0, 0, 0);
     text-decoration: none;
-    border-radius: 2px;
     box-shadow: 3px 3px 0 #FFF;
     width: 120px;
     display: inline-block;
+}
+.nymeny a {
+    background: rgb(0, 0, 0);
+    color: rgb(235, 138, 11);
 }
