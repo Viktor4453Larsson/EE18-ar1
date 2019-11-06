@@ -1,0 +1,96 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}*{
+    box-sizing: border-box;
+}
+
+body{
+    background:#ec1faf;
+    color:#450331;
+    line-height: 1.6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 1em;
+}
+ul {
+list-style: none;
+padding: 0;
+}
+.kontanier {
+max-width: 1170px;
+margin-left: auto;
+margin-right: auto;
+padding: 1em;
+}
+.marke {
+text-align: center;
+}
+.marke span{
+    color: #FFF;
+}
+.omslag {
+box-shadow: 0 0 20px 0 rgba(72, 94, 116, 0.7);
+}
+.omslag > *{
+    padding: 1em;
+}
+.foretag_info{
+background: #ec1faf;
+}
+.foretag_info h3, .foretag_info ul{
+    text-align: center;
+    margin: 0 0 1rem 0;
+}
+.kontakt {
+background: #f9feff;
+}
+/* Formulär stilar */
+.kontakt form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+.kontakt form label{
+    display: block;
+}
+.kontakt form p{
+    margin: 0;
+}
+.kontakt form .full{
+    grid-column: 1 / 3;
+}
+.kontakt form button, .kontakt form input, .kontakt form textarea{
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ec1faf;
+}
+.kontakt form button{
+    background: #ec1faf;
+    border: 0;
+    text-transform: uppercase;
+}
+.kontakt form button:hover, .kontakt form button:focus{
+    background: #a20d76;
+    color: #fff;
+    outline:0;
+}
+/* För större skärmar */
+@media (min-width:700px){
+.omslag{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.omslag > *{
+    padding: 2em;
+}
+.foretag_info h3 .foretag_info ul, .brand{
+    text-align: left;
+}  
+}
