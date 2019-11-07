@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kontakt formulär</title>
+    <link rel="stylesheet" href="./kontakt.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Kontaktformulär</h1>
+        <form action="kontakt.php" method="POST">
+            <label for="fnamn">Förnamn</label>
+            <input id="fnamn" type="text"  name=Förnamn  placeholder="tex Anders" required>
+            <label for="enamn">Efternamn</label>
+            <input id="enamn" type="text" name=Efternamn placeholder="tex Larsson" required>
+            <label for="gatuadress">Gatuadress</label>
+            <input id="gatuadress" type="text"  name=Gatuadress placeholder="tex 123" required>
+            <label for="padress">Postadress</label>
+            <input id="padress" type="text" name=Postadress  placeholder="tex Stockholm" required>
+            <label for="email">E-post</label>
+            <input id="email" type="email" name=Email  placeholder="tex anders@gmail.com" required>
+            <label for="nummer">Mobil</label>
+            <input id="nummer" type="tel" name=Nummer placeholder="tex 07863465645" required pattern="07[0-9]{8}">
+
+            <label>Kön</label>
+            <div class="kon">
+                <label for="Man"><input type="radio" id="Man" name="kon" required> Man </label>
+                <label for="Kvinna"><input type="radio" id="Kvinna" name="kon" required>Kvinna </label>
+            </div>
+            <!-- Cirklarna gör att man bara kan välja ett alternativ, ett ID är som en klass man bara får använda en enda gång -->
+
+            <label>Allergi</label>
+            <div class="kon">
+                <label for="Gluten"><input type="checkbox" id="Gluten" name="Allergi" required></label>
+                <label for="Laktos"><input type="checkbox" id="Laktos" name="Allergi" required></label>
+                <label for="Nötter"><input type="checkbox" id="Nötter" name="Allergi" required></label>
+            </div>
+            <!-- Name är som ett kuvär för att skicka inforamtion -->
+            <!-- Alt+Z fixar radbryttning, checkboxar gör att man kan välja en eller flera -->
+            <label for="hkommun">HemKommun</label> 
+            <select id="hkommun">
+                <option value="">Stockholm</option>
+                <option value="">Huddinge</option>
+                <option value="">Flen</option>
+                <option value="">Nacka</option>
+                <option value="">Södertälje</option>
+                <option value="">Tumba</option>
+                <option value="">Göteborg</option>
+                <option value="">Gullmarsplan</option>
+            </select>
+
+            <label for="kommentar">Komentar</label>
+            <textarea id="kommentar"> name=Komentar Skriv din kommentar här...</textarea>
+            <button>Skicka</button>
+        </form>
+    </div>
+</body>
+</html>
