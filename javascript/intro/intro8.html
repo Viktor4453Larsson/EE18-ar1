@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunderna i Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer"></div>
+    <h1>
+        Grunderna i Javascript
+    </h1>
+    <script>
+        /* Dagens datum */
+        var idag = new Date();
+        /* Date är ett objekt den kan inehålla saker och funktioner */
+        console.log(idag);
+        console.log(idag.getHours() + "timmar");
+        console.log(idag.getMinutes() + "minuter");
+
+        var klockan = " Klockan är " + idag.getHours() + ":" + idag.getMinutes();
+
+        alert(klockan);
+
+        /* Veckodag? */
+        var veckodag = idag.getDay();
+        console.log(veckodag);
+
+        /*Månaden?*/
+        var månad = idag.getMonth();
+        console.log(Månad);
+
+        /* På ren svenska? */
+        var options = {
+            weekday: 'long',
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        };
+        var datum = idag.toLocaleDateString("sv-SE", options);
+        console.log(datum);
+        console.log(datum);
+        
+
+
+
+
+        /* Att man har två paranteser efter såhär: () används för en funktion (Det kallas för en metod)*/
+    </script>
+</body>
+</html>
