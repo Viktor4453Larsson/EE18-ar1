@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Grunder i Javascript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Lyssna på knapphändeler</h1>
+
+        <button onclick="frågaNamn()">Ange Namn</button>
+        <button onclick="frågaÅlder()">Ange Ålder</button>
+        <button onclick="frågaAdress()">Ange Adress</button>
+        <button onclick="sammanfattning()">Sammanfattning</button>
+        <!-- onclick är en händelse som väntar på att något händer i dehär fallet att museen trycks ner -->
+    </div>
+    <!-- Gör detta alltid -->
+    <script>
+        /*Deklarera variablerna  */
+        var namn; 
+        var ålder
+        var adress
+
+        function frågaNamn() {
+            namn = prompt("Hej! Vad heter du?");
+            console.log(namn);
+            /* namn finns bara i den här funtionen men inte utanför, därmed så måste de finnas överallt */
+        }
+
+        function frågaÅlder() {
+            ålder = prompt("Hej! Hur gammal är du?");
+            console.log(ålder);
+
+        }
+
+        function frågaAdress() {
+            adress = prompt("Hej! Var bor du?");
+            console.log(adress);
+
+        }
+
+        function sammanfattning() {
+            var adress = prompt("Vad är ditt namn, ålder och adress?");
+            console.log("Hej du heter" + namn + ", du är " + ålder + "gammal" + "du bor på" + adress);
+
+        }
+        /* Funktion är ett packet av kod */
+    </script>
+</body>
+</html>
