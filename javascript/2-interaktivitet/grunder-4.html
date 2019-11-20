@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Animera element på sidan</title>
+    <!-- Include Animatelo -->
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body onclick="prova()">
+    <div class="kontainer">
+        <h1>I rörelse</h1>
+        <p>
+            Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.
+        </p>
+        <p>
+            Nog finns det mål och mening i vår färd -
+            men det är vägen, som är mödan värd.<br>
+        </p>
+        <p>
+        Det bästa målet är en nattlång rast,
+        där elden tänds och brödet bryts i hast.<br>
+    </p>
+            <p>
+                På ställen, där man sover blott en gång,
+                blir sömnen trygg och drömmen full av sång.<br>
+            </p>
+            <p>
+                Bryt upp, bryt upp! Den nya dagen gryr.<br>
+                Oändligt är vårt stora äventyr.
+            </p>
+            <img src="../bilder/fire.jpg" alt="En eld">
+
+            <button onclick="jelloRubrik()">Jello</button>
+            <button onclick="wobbleParagraf()">Texten</button>
+            <button onclick="bildenSlide()">Bild</button>
+            <button onclick="kontainerWobble()">kontainer</button>
+    </div>
+    <!-- Gör detta alltid -->
+    <script>
+function jelloRubrik() {
+    window.animatelo.jello("h1");
+}
+function wobbleParagraf() {
+    window.animatelo.wobble("p");
+}
+function bildenSlide() {
+    window.animatelo.slideOutLeft("img");
+}
+function kontainerWobble() {
+    window.animatelo.wobble(".kontainer");
+}
+function prova() {
+    window.animatelo.wobble("body");
+}
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer" id="#box">
+        <h1>I rörelse</h1>
+        <p id="p1">
+            Den mätta dagen, den är aldrig störst.<br>
+            Den bästa dagen är en dag av törst.
+        </p>
+        <p id="p2">
+            Nog finns det mål och mening i vår färd - <br>
+            men det är vägen, som är mödan värd.
+        </p>
+
+        <button onclick="stylaRubrik()">Styla rubriken</button>
+        <button onclick="stylaTexten()">Styla texten</button>
+    </div>
+    <script>
+        function stylaRubrik() {
+            /* Hitta elementet som skapats av <h1>  */
+            const elementH1 = document.querySelector("h1");
+            /* Ändrar färgen på h1 elementet */
+            elementH1.style.color = "red";
+
+            /* Ändra rubrikens textstorlek till 60px */
+            elementH1.style.fontSize = "60px";
+
+            /* Förändra typsnitt på rubriken till courier */
+            elementH1.style.fontFamily = "Courier";
+        }
+
+        function stylaTexten() {
+            /* Hitta elementet som skapats av <p>  */
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+
+            /* Ändrar färgen på p elementet */
+            elementP1.style.color = "yellow";
+
+            /* Ändra rubrikens textstorlek till 40px */
+            elementP1.style.fontSize = "40px";
+
+            /* Förändra typsnitt på rubriken till Gill Sans */
+            elementP1.style.fontFamily = "Gill Sans";
+
+            /* Förändra typsnitts skugga */
+            elementP1.style.textShadow = "1px 1px 1px #FFF";
+
+            /* Ändrar färgen på p elementet */
+            elementP2.style.color = "yellow";
+
+            /* Ändra rubrikens textstorlek till 40px */
+            elementP2.style.fontSize = "40px";
+
+            /* Förändra typsnitt på rubriken till Gill Sans */
+            elementP2.style.fontFamily = "Gill Sans";
+
+            /* Förändra typsnitts skugga */
+            elementP2.style.textShadow = "1px 1px 1px #FFF";
+        }
+    </script>
+</body>
+</html>
