@@ -32,29 +32,14 @@
             const elementKnapp1 = document.querySelector("#b1");
             const elementKnapp2 = document.querySelector("#b2");
 
-            elementBox.style.backgroundColor = "black";
-            elementH1.style.color = "#345";
-            elementP1.style.color = "#999";
-            elementP2.style.color = "#999";
-            elementKnapp1.style.color = "#555";
-            elementKnapp2.style.color = "#555";
-
-        }
-
-        function ljust() {
-            const elementBox = document.querySelector(".kontainer");
-            const elementH1 = document.querySelector("#h1");
-            const elementP1 = document.querySelector("#p1");
-            const elementP2 = document.querySelector("#p2");
-            const elementKnapp1 = document.querySelector("#b1");
-            const elementKnapp2 = document.querySelector("#b2");
-
-            elementBox.style.backgroundColor = "white";
-            elementH1.style.color = "#FFF";
-            elementP1.style.color = "#AAA";
-            elementP2.style.color = "#AAA";
-            elementKnapp1.style.color = "#666";
-            elementKnapp2.style.color = "#666";
+            document.title = "Mörkt Läge"
+            document.body.style.cssText = "background: #000;";
+            elementBox.body.style.cssText = "background: #222; color: #FFF;";
+            elementBox.style.cssText = "background: #333; color : #FFF";
+            elementP1.style.cssText = "background: #333; color : #FFF";
+            elementP2.style.cssText = "background: #333; color : #FFF";
+            elementKnapp1.style.cssText = "background: #333; color : #FFF";
+            elementKnapp2.style.cssText = "background: #333; color : #FFF";
         }
     </script>
 </body>
