@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <!-- Include Animatelo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer kol3">
+        <img id="foto1" src="../foton/photo-1569271836752-ed9351b75521.jpg" alt="Trappor">
+        <img id="foto2" src="../foton/photo-1570598339819-b07db356695e.jpg" alt="Sten">
+        <img id="foto3" src="../foton/photo-1572315831029-5d6f20e0035d.jpg" alt="Löv">
+
+        <button onclick="Blink1()">Starka blink</button>
+        <button onclick="bildKontrast()">Bildkontrast</button>
+        <button onclick="bildInvert()">Skugga</button>
+    </div>
+    <script>
+        const elementfoto1 = document.querySelector("#foto1");
+        const elementfoto2 = document.querySelector("#foto2");
+        const elementfoto3 = document.querySelector("#foto3");
+
+        function Blink1() {
+            elementfoto1.classList.toggle("gråskala");
+            setInterval(svartVit, 500);
+
+        }
+
+        function bildKontrast(params) {
+            elementfoto2.classList.toggle("kontrast");
+        }
+
+        function bildInvert(params) {
+            elementfoto3.classList.toggle("skugga");
+        }
+
+        function svartVit() {
+            elementfoto1.classList.toggle("gråskala");
+        }
+    </script>
+</body>
+</html>
