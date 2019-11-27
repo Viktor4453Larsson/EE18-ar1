@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Övningar på grunder 2</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Träning på JS</h1>
+        <script>
+            var celsius = prompt("Vad är vädret i celsius?");
+
+            /* var farenheit = celsius * 9 / 5 + 32;*/
+
+            alert(celsius + "\xB0; Temperaturen är" + celsius + farenheit + "\xB0 farenheit");
+
+            var tal1 = Math.ceil(Math.random() * 10);
+            var tal2 = Math.ceil(Math.random() * 10);
+
+            var total = tal1 + tal2;
+
+            var summa = tal1 + tal2;
+            var gissa = prompt("Vad blir " + tal1 + "+" tal2 + "?");
+
+            if (gissa == summa) {
+                alert("Rätt svar")
+            } else {
+                alert("Dåligt svar")
+            }
+
+            var idag = new Date();
+
+            console.log(idag);
+            console.log(idag.getHours() + "timmar");
+            console.log(idag.getMinutes() + "minuter");
+            
+            var klocka = " Klocka är " + idag.getHours() + ":" + idag.getMinutes();
+            
+        </script>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Övningar inför programmeringsprovet</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Övning 1</h1>
+        <h1>Slumpa fram ett nytt tal i JS</h1>
+    </div>
+
+    <script>
+        var liwia = prompt("Hej! Vad har Liwia i betyg i mattematik?");
+        console.log(liwia);
+        console.log("Liwia har" + liwia);
+
+        var skola = prompt("Hejsan! Var ligger din skola?");
+        console.log(skola);
+        console.log("Din skola befinner sig på " + skola);
+
+        var pappa = prompt("Hello! Hur gammal är din pappa?");
+        console.log(pappa);
+        console.log("Din pappa är" + pappa);
+
+        var ålder = prompt("Hej unga människa hur gammal är du?");
+        console.log(ålder);
+        console.log("Du är" + ålder);
+
+        var slumptal = Math.ceil(Math.random() * 10);
+        console.log(slumptal);
+
+        var svaret = prompt("Gissa ett tal från 1-9");
+
+     if (svaret == slumptal) {
+         alert("Yey du är bra!");
+         location.replace ("https://www.jw.org/sv/");
+     } else {
+        alert("Dåligt svar!");
+        location.replace("https://wol.jw.org/sv/wol/s/r14/lp-z?q=Lukas%2023");
+     }
+    </script>
+</body>
+</html>
