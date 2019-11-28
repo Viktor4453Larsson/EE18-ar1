@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <!-- Include Animatelo -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer kol3">
+        <img id="img" class="dold" src="../foton/photo-1569271836752-ed9351b75521.jpg" alt="">
+        <img id="byxor1" src="../bilder/byxor.webp" alt="Byxor">
+        <img id="hoddie2" src="../bilder/svart_hoddie.webp" alt="Hoddie">
+        <img id="troja3" src="../bilder/vit-troja.webp" alt="Tröja">
+        <h1>Köp 3 betala för 2 med en tillagd rabbat på 30%!!!</h1>
+        <button onclick="kontrast1()">Black friday special</button>
+    </div>
+    <script>
+        /* Element vi arbetar med */
+        const elementImg = document.querySelector("#img")
+        const elementImg1 = document.querySelector("#byxor1")
+        const elementImg2 = document.querySelector("#hoddie2")
+        const elementTroja3 = document.querySelector("#troja3")
+        const elementH1 = document.querySelector("h1")
+        const elementBody = document.querySelector("body")
+
+        setInterval(flasha, 1000);
+        /* Fördröjning */
+
+        setTimeout(visaBild, 3000);
+
+        function visaBild() {
+            elementImg.classList.remove("dold");
+            elementImg.classList.add("slideOutDown");
+            setTimeout(visaBild, 6000);
+        }
+
+        function kontrast1() {
+            elementImg1.classList.toggle("kontrast");
+            setInterval(svartVit, 500);
+        }
+
+        setInterval(flasha, 1000);
+
+        function flasha() {
+            elementImg2.classList.remove("skugga")
+            elementTroja3.classList.add("skugga")
+        }
+
+    </script>
+</body>
+</html>
