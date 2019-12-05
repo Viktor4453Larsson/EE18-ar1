@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>grunder i JS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="//cdn.rawgit.com/gibbok/animatelo/1.0.3/dist/animatelo.min.js"></script>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Träning på JS del 3</h1>
+        <p id="p1" hidden>Bra vänner finns inte överallt</p>
+        <p id="p2" hidden>Vinrosa och vinröd är båda fina färger</p>
+        <i id="pil20" onclick="visaText20()" class="fa fa-toggle-right">20</i>
+        <ul id="text20" class="animated dold fa-ul">
+        <li></i class = "fa-li fa fa-check-square"></i>
+            Ingen behöver gå i skolan längre.
+        </li>
+        <li></i class = "fa-li fa fa-check-square"></i>
+            Ingen behöver gå i skolan längre.
+        </li>
+        <li></i class = "fa-li fa fa-check-square"></i>
+            Ingen behöver gå i skolan längre.
+        </li>
+        </ul>
+
+        <button onclick="stylaRubrik()">Styla rubriken</button>
+        <button onclick="snyggaTexten()">Snygga texten</button>
+
+        <button id="k1" onclick="svart()">Mörkt</button>
+        <button id="k2" onclick="vitt()">Ljust</button>
+
+        <button id="k3" onclick="seAllt()">Varning var försiktig!</button>
+        <button id="k4" onclick="taBort()">Dölj</button>
+
+        <button onclick="säkerEpostAdress()">En säker epostadress</button>
+    </div>
+
+    <script>
+        function stylaRubrik() {
+            const elementH1 = document.querySelector("h1");
+
+            elementH1.style.color = "yellow";
+
+            elementH1.style.fontSize = "40px";
+
+            elementH1.style.fontFamily = "Antiqua";
+        }
+
+        function snyggaTexten() {
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+
+            elementP1.style.color = "green";
+
+            elementP1.style.textshadow = "2px 2px 2px #FFF";
+
+            elementP2.style.fontSize = "25px";
+
+            elementP2.style.color = "green";
+        }
+
+        function svart() {
+            const elementBody = document.querySelector("body");
+            const elementBox = document.querySelector(".kontainer");
+            const elementDiv = document.querySelector("div");
+
+            elementBody.style.backgroundColor = "#000";
+            elementBox.style.color = "#356";
+            elementDiv.style.backgroundColor = "#000";
+        }
+
+        function vitt() {
+            const elementBody = document.querySelector("body");
+            const elementBox = document.querySelector(".kontainer");
+            const elementDiv = document.querySelector("div");
+
+            elementBody.style.backgroundColor = "#FFF";
+            elementBox.style.color = "#222";
+            elementDiv.style.backgroundColor = "#FFF";
+        }
+
+        function seAllt() {
+            const elementP1 = document.querySelector("#p1");
+            const elementP2 = document.querySelector("#p2");
+
+
+            elementP1.hidden = false;
+            window.animatelo.bounceIn("#p1");
+            elementP2.hidden = false;
+            window.animatelo.bounceIn("#p2");
+
+        }
+
+        function taBort() {
+            window.animatelo.flipOutY(".kontainer");
+        }
+
+        function visaText20() {
+const elementText20 = document.querySelector("#text20");
+const elementPil20 = document.querySelector("#pil20");
+
+
+        elementText20.classList.add("wobble");
+        elementText20.classList.toggle("dold");
+
+        elementPil20.classList.toggle("fa-toggle-right");
+        elementPil20.classList.toggle("fa-toggle-down");   
+        }
+        function säkerEpostAdress() {
+          var epostadress = prompt("Hej! Vad är din epostadress?")
+          console.log(epostadress);
+
+          var epostadress = epostadress.replace('@', '(at)')
+          alert("Hej! din epost är " + epostadress)
+          console.log(epostadress);
+          
+            
+        }
+    </script>
+
+</body>
+</html>

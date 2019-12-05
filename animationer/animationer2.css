@@ -1,0 +1,116 @@
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+html, body {
+    /* Vanliga texturer */
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+.grass, .sky, .road {
+    position: relative;
+}
+.sky {
+    height: 40%;
+    background: skyblue;
+}
+.grass {
+    height: 30%;
+    background: seagreen;
+}
+.road {
+    height: 30%;
+    background: dimgray;
+    box-sizing: border-box;
+    border-top: 10px solid grey;
+    border-bottom: 10px solid grey;
+    width: 100%;
+}
+.lines {
+    box-sizing: border-box;
+    border: 5px dashed #FFF;
+    height: 0px;
+    width: 100%;
+    position: absolute;
+    top: 45%;
+}
+
+/* Saker som ska röra på sig */
+.Mario {
+    position: absolute;
+    top: 650px;
+    left: 0px;
+    animation-name: drive;
+    animation-duration: 3s;
+    animation-fill-mode: both;
+    animation-iteration-count: 2;
+    animation-timing-function: linear, jump 0.3s 1.2s ease;
+}
+.Luigi {
+    position: absolute;
+    top: 725px;
+    left: 0;
+    animation-name: drive;
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    animation-iteration-count: 3;
+    animation-direction: alternate-reverse;
+    animation-timing-function: linear, jump 0.3s 1.2s ease;
+}
+
+.cloud {
+    position: absolute;
+
+}
+
+.cloud:nth-child(1) {
+    width: 200px;
+    top: 120px;
+    opacity: 0.5;
+    animation: wind 80s linear infinite reverse;
+}
+
+.cloud:nth-child(2) {
+    width: 300px;
+    top: 0;
+    animation: wind 50s linear infinite reverse;
+}
+/* Keyframes */
+
+@keyframes drive {
+    from {
+        transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(2000px);
+    }
+}
+@keyframes wind {
+    from {
+        left: -300px;
+    }
+    to {
+        left: 100%;
+    }
+}
+
+@keyframes jump {
+    0% {
+        top: -40px;
+    }
+    50% {
+        top: -100px;
+    }
+    100% {
+        top: -40px;
+    }
+}
