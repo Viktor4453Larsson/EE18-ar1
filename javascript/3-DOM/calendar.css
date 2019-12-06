@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Dancing+Script&display=swap');
+/* Enkel CSS-reset */
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+body, h1, h2, h3, h4, h5, h6, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Göra utseendet på kalendaren */
+body {
+background-image: url(./bilder/kalendar.jpg);
+}
+.kontainer {
+background: yellow;
+width: 800px;
+margin: auto;
+font-family: 'Bebas Neue', cursive;
+color: white;
+text-align: center;
+}
+.h1 {
+font-size: 150px;
+font-family: 'Dancing Script', cursive;
+}
+ .kalender {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+gap: 20px;
+padding: 20px;
+justify-content: space-around;
+}
+.ruta {
+font-size: 40px;
+background: rgb(214, 214, 116);
+width: 100px;
+height: 100px;
+padding: 25px;
+border-radius: 10px;
+cursor: pointer;
+transition-delay: 0.5s;
+}
+.ruta:hover {
+    background: rgb(236, 236, 148);
+    box-shadow: 0 0 10px #FFF;
+    animation: tona 5s;
+}
+@keyframes tona {
+    from { opacity: 0;}
+    to {opacity: 1;}
+}
