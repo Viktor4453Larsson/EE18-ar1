@@ -8,60 +8,49 @@
     <link rel="stylesheet" href="./calendar.css">
 </head>
 <body>
-    <div class="kontainer">
-        <h1>Mars</h1>
-        <div class="kalender">
-            <div class="ruta animated dag1" onclick= "animeraDag1">1</div>
-            <div class="ruta animated dag2" onclick="animeraDag2">2</div>
-            <div class="ruta animated dag3" onclick="animeraDag3">3</div>
-            <div class="ruta animated dag4" onclick="animeraDag4">4</div>
-            <div class="ruta animated dag5" onclick="animeraDag5">5</div>
-            <div class="ruta animated dag6" onclick="animeraDag6">6</div>
-            <div class="ruta animated dag7" onclick="animeraDag7">7</div>
-            <div class="ruta animated dag8" onclick="animeraDag8">8</div>
-            <div class="ruta animated dag9" onclick="animeraDag9">9</div>
-            <div class="ruta animated dag10" onclick="animeraDag10">10</div>
-            <div class="ruta animated dag11" onclick="animeraDag11">11</div>
-            <div class="ruta animated dag12" onclick="animeraDag12">12</div>
-            <div class="ruta animated dag13" onclick="animeraDag13">13</div>
-            <div class="ruta animated dag14" onclick="animeraDag14">14</div>
-            <div class="ruta animated dag15" onclick="animeraDag15">15</div>
-            <div class="ruta animated dag16" onclick="animeraDag16">16</div>
-            <div class="ruta animated dag17" onclick="animeraDag17">17</div>
-            <div class="ruta animated dag18" onclick="animeraDag18">18</div>
-            <div class="ruta animated dag19" onclick="animeraDag19">19</div>
-            <div class="ruta animated dag20" onclick="animeraDag20">20</div>
-            <div class="ruta animated dag21" onclick="animeraDag21">21</div>
-            <div class="ruta animated dag22" onclick="animeraDag22">22</div>
-            <div class="ruta animated dag23" onclick="animeraDag23">23</div>
-            <div class="ruta animated dag24" onclick="animeraDag24">24</div>
-            <div class="ruta animated dag25" onclick="animeraDag25">25</div>
-            <div class="ruta animated dag26" onclick="animeraDag26">26</div>
-            <div class="ruta animated dag27" onclick="animeraDag27">27</div>
-            <div class="ruta animated dag28" onclick="animeraDag28">28</div>
-            <div class="ruta animated dag29" onclick="animeraDag29">29</div>
-            <div class="ruta animated dag30" onclick="animeraDag30">30</div>
-            <div class="ruta animated dag31" onclick="animeraDag31">31</div>
+    <div class="mitten">
+        <div class="kontainer">
+            <h1>Mars</h1>
+            <div class="kalender">
+                <div class="ruta animated dag1" onclick="animeraDag1()">1</div>
+                <div class="ruta animated dag2" onclick="animeraDag2()">2</div>
+                <div class="ruta animated dag3" onclick="animeraDag3()">3</div>
+                <div class="ruta animated dag4" onclick="animeraDag4()">4</div>
+                <div class="ruta animated dag5" onclick="animeraDag5()">5</div>
+                <div class="ruta animated dag6" onclick="animeraDag6()">6</div>
+                <div class="ruta animated dag7" onclick="animeraDag7()">7</div>
+                <div class="ruta animated dag8" onclick="animeraDag8()">8</div>
+                <div class="ruta animated dag9" onclick="animeraDag9()">9</div>
+                <div class="ruta animated dag10" onclick="animeraDag10()">10</div>
+                <div class="ruta animated dag11" onclick="animeraDag11()">11</div>
+                <div class="ruta animated dag12" onclick="animeraDag12()">12</div>
+                <div class="ruta animated dag13" onclick="animeraDag13()">13</div>
+                <div class="ruta animated dag14" onclick="animeraDag14()">14</div>
+                <div class="ruta animated dag15" onclick="animeraDag15()">15</div>
+                <div class="ruta animated dag16" onclick="animeraDag16()">16</div>
+                <div class="ruta animated dag17" onclick="animeraDag17()">17</div>
+                <div class="ruta animated dag18" onclick="animeraDag18()">18</div>
+                <div class="ruta animated dag19" onclick="animeraDag19()">19</div>
+                <div class="ruta animated dag20" onclick="animeraDag20()">20</div>
+                <div class="ruta animated dag21" onclick="animeraDag21()">21</div>
+                <div class="ruta animated dag22" onclick="animeraDag22()">22</div>
+                <div class="ruta animated dag23" onclick="animeraDag23()">23</div>
+                <div class="ruta animated dag24" onclick="animeraDag24()">24</div>
+                <div class="ruta animated dag25" onclick="animeraDag25()">25</div>
+                <div class="ruta animated dag26" onclick="animeraDag26()">26</div>
+                <div class="ruta animated dag27" onclick="animeraDag27()">27</div>
+                <div class="ruta animated dag28" onclick="animeraDag28()">28</div>
+                <div class="ruta animated dag29" onclick="animeraDag29()">29</div>
+                <div class="ruta animated dag30" onclick="animeraDag30()">30</div>
+                <div class="ruta animated dag31" onclick="animeraDag31()">31</div>
+            </div>
         </div>
     </div>
     <script>
         /* Element vi arbetar med */
         const elementDag1 = document.querySelector(".dag1");
-
-        function animeraDag1() {
-            elementDag1.classList.toggle("jello");
-
-        }
         const elementDag2 = document.querySelector(".dag2");
-
-        function animeraDag2() {
-            elementDag2.classList.toggle("wobble");
-        }
         const elementDag3 = document.querySelector(".dag3");
-
-        function animeraDag3() {
-            elementDag3.classList.toggle("bounceIn");
-        }
         const elementDag4 = document.querySelector(".dag4");
 
         function animeraDag4() {
@@ -201,6 +190,45 @@
 
         function animeraDag31() {
             elementDag31.classList.toggle("jello");
+        }
+        const elementDag1() {
+            elementDag1.classList.toggle("fadeOut");
+            setTimeout(function() {
+                elementDag1.classList.toggle("bild1");
+            }, 2000);
+
+
+
+
+
+    
+            function öppnaDag1() {
+            elementDag1.classList.toggle("fadeOut");
+            setTimeout
+            elementDag1.classList.toggle("bild11");
+        }
+
+
+
+            function animeraDag1() {
+            setTimeout
+            elementDag1.classList.toggle("jello");
+        }
+
+
+
+        function animeraDag2() {
+            elementDag2.classList.toggle("wobble");
+            setTimeout(function() {
+                elementDag2.classList.toggle("bildText");
+                elementDag2.innerHTML = "Yey vad kul";
+            }, 2000);
+        }
+
+
+        function animeraDag3() {
+            elementDag3.classList.toggle("bounceIn");
+        }
         }
     </script>
 </body>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1 onclick="visaNyH1()">Klicka på mig!</h1>
+        <p onclick="visaNyP()">Klicka här också</p>
+        <div id="div1" onclick="visaVideo()">kj nkj kh </div>
+    </div>
+    <script>
+        /* Jobba med mobilnummret */
+        const elementTitel = document.querySelector("h1");
+        const elementP = document.querySelector("p")
+        const elementVideo = document.querySelector("#div1");
+
+        function visaNyH1() {
+            elementTitel.textContent = "När man känner sig ensam";
+        }
+
+        function visaNyP() {
+            elementP.innerHTML = "Jag hade två tjejkompisar som hittade på" +
+             "höra hur roligt de hade haft. En gång när jag ringde hem till en av" +
+             "  dem var det någon annan som svarade, men i bakgrunden kunde jag " +
+              " höra hur mina kompisar pratade och skrattade. "+
+             "  Då kände jag mig ännu  mer ensam!";
+            elementVideo.innerHTML = "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/Ummu8IRbKNw\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>";
+        }
+    </script>
+</body>
+</html>

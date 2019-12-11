@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Abba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Abba</h1>
+    <p>bla blab bla bla</p>
+    <button onclick="stylaRubriken">Styla rubriken</button>
+    <button onclick="stylaTexten">Styla texten</button>
+    <button onclick="blinkaKnappen">Blinka knappen</button>
+</body>
+<script>
+
+    const elementH1 = document.querySelector("h1");
+    const elementP = document.querySelector("p");
+    const elementBox = document.querySelector(".kontainer");
+   
+function stylaRubriken() {
+    elementH1.style.color = "red";
+}
+function stylaTexten() {
+    elementP.style.display = "none";
+
+    setInterval(blinkaTillbaka, 1000);
+}
+function blinkaKnappen() {
+    elementBox.classList.toggle("blink");
+}
+</script>
+</html>

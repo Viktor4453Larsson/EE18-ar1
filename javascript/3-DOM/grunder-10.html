@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Arbeta med DOM</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Infoga text i sidan</h1>
+        <p id="p1">Hemligt mobilnummer</p>
+        <p id="p2">Hemlig adress</p>
+        <div id="avatar">Hemlig avatarbild</div>
+        <button onclick="visaNr" onmouseout="döljNr()">Visa mobilnummer</button>
+        <button onclick=" visaAdress()" onmouseup="adressenKommer()" onmouseout="döljAd()">Visa adressen</button>
+        <button onclick="visaBilden()" onmouseup="bildenVisas()" onmouseout="döljBild()">Visa Bild</button>
+    </div>
+    <script>
+        /* Jobba med mobilnummret */
+        const elementP = document.querySelector("#p2");
+
+        function visaMobilummer() {
+            /* Infoga ens mobilnummer i p */
+            elementP.textContent = "07004223421";
+        }
+
+        function visaNr() {
+            elementP.textContent = "07004223421";
+        }
+
+        function döljNr() {
+            elementP.textContent = "Hemligt mobilnummer";
+        }
+        const elementP1 = document.querySelector("#p1");
+
+
+        function visaAdress() {
+            /* Infoga ens mobilnummer i p */
+            elementP.textContent = "Ymsenvägen 13";
+        }
+
+        function döljAd() {
+            elementP.textContent = "Hemligt Adress";
+        }
+
+        function visaBilden() {
+            elementBox = document.querySelector("div");
+        }
+
+        function bildenVisas() {
+            elementBild.innerHTML = "<img src=\"../foton/kreativperson.jpg\" alt=\"Avatar\">";
+        }
+
+        function döljBild() {
+
+        }
+    </script>
+</body>
+</html>

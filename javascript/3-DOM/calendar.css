@@ -11,38 +11,57 @@ body, h1, h2, h3, h4, h5, h6, p, ul {
     padding: 0;
 }
 
+/* För att få sidan i mittan av webbläsarfönstret */
+html, body {
+    height: 100%;
+}
+.mitten {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-items: center;
+}
+
 /* Göra utseendet på kalendaren */
 body {
-background-image: url(./bilder/kalendar.jpg);
+    background-image: url(./bilder/kalendar.jpg);
 }
 .kontainer {
-background: yellow;
-width: 800px;
-margin: auto;
-font-family: 'Bebas Neue', cursive;
-color: white;
-text-align: center;
+    background: yellow;
+    width: 700px;
+    margin: auto;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+    text-align: center;
 }
 .h1 {
-font-size: 150px;
-font-family: 'Dancing Script', cursive;
+    font-size: 150px;
+    font-family: 'Dancing Script', cursive;
+    border: 5px dashed #FFF;
+    background: white;
+    border-radius: 100px;
+    margin-bottom: 20px;
 }
- .kalender {
-display: grid;
-grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-gap: 20px;
-padding: 20px;
-justify-content: space-around;
+.kalender {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    justify-content: space-around;
 }
 .ruta {
-font-size: 40px;
-background: rgb(214, 214, 116);
-width: 100px;
-height: 100px;
-padding: 25px;
-border-radius: 10px;
-cursor: pointer;
-transition-delay: 0.5s;
+    font-size: 40px;
+    font-family: sans-serif;
+    background: rgb(214, 214, 116);
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition-delay: 1s;
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 .ruta:hover {
     background: rgb(236, 236, 148);
@@ -50,6 +69,24 @@ transition-delay: 0.5s;
     animation: tona 5s;
 }
 @keyframes tona {
-    from { opacity: 0;}
-    to {opacity: 1;}
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.bild1 {
+font-size: 0;
+background: url(../foton/hund1.jpg) center;
+background-size: 80px 80px ;
+animation: tona 5s;
+pointer-events: none;
+}
+.bildText {
+    font: 12px sans-serif;
+    padding: 10px;
+    background: rgba(228, 218, 218, 0.808);
+    animation: tona 2s;
+    pointer-events: none;
 }
