@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund Gif</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <button onclick="ersättGifen()">Klicka på mig!</button>
+    </div>
+    <script> 
+        const elementBox = document.querySelector("div");
+
+    function ersättGifen() {
+        elementBox.innerHTML = "<h1> Hund som är galen <h1/>" +
+                               "\<img src=\"../foton/giphy.gif\" alt=\"Hund\">";
+    }
+    </script>
+</body>
+</html>

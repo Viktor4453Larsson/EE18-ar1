@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund Gif</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Läsa av input-rutor</h1>
+
+        <h2>Input</h2>
+        <label >Förnamn</label>
+        <input type="text" id="förnamn">
+        <label >Efternamn</label>
+        <input type="text" id="efternamn">
+        <button onclick="läsaNamn()">Skicka</button>
+
+
+        <h2>Output</h2>
+        <p>Resultat</p>
+    </div>
+    <script>
+        const elementResultat = document.querySelector("p");
+        const elementInput1 = document.querySelector("#förnamn");
+        const elementInput2 = document.querySelector("#efternamn");
+
+        /* När vi klickar här så */
+        function läsaNamn() {
+            /* Läsa av input-rutan */
+          var förnamn = elementInput1.value;
+          var efternamn = elementInput2.value;
+            /* Skriva in i P */
+         elementResultat.textContent = "Ditt namn är" + förnamn + "" + efternamn;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund Gif</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>00:00:00</h1>
+        <button onclick="visaKlocka()">Vad är klockan?</button>
+    </div>
+    <script>
+        const elementH1 = document.querySelector("h1");
+        
+
+        function visaKlocka() {
+
+            /* Körs en funktion varje sekund */
+            setInterval(realtidsKlocka, 1000);
+
+        }
+
+        function realtidsKlocka() {
+
+            var idag = new Date();
+            var tiden = idag.getHours() + ":" + idag.getMinutes() + ":" + idag.getSeconds(); 
+            elementH1.textContent = tiden;
+        }
+    </script>
+</body>
+</html>
