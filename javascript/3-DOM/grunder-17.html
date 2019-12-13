@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund Gif</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Spamskydd</h1>
+        <h2>Input</h2>
+        <label>...</label>
+        <input type="text">
+        <button onclick="gissa()">Skicka</button>
+        <h2>Output</h2>
+        <p>Resultat</p>
+    </div>
+    <script>
+        const elementTal = document.querySelector("input");
+        const elementP = document.querySelector("p");
+        const elementLabel = document.querySelector("label");
+        /* Läs in temperatur i Celsius  */
+        /* Slumpa fram två tal 1-10 */
+        var slumptal1 = Math.ceil(Math.random() * 10);
+        var slumptal2 = Math.ceil(Math.random() * 10);
+        /* Presentera frågan i label */
+        var gissning = elementTal.value
+        /* Räkna ut summan = tal1 + tal2*/
+        var summa = slumptal1 + slumptal2;
+        /* Läs in gissningen */
+        elementLabel.textContent = "Vad är " + slumptal1 + "+" + slumptal2 + "?";
+        function gissa() {
+            /*Är gissning = summa ? */
+            if (gissning == summa) {
+                /* Rätt svar! */
+                elementP.textContent = "Rätt Svar!";
+            } else {
+                /* Fel Svar! */
+                elementP.textContent = "Fel Svar!";
+            }
+            /* Detta är ett slumptal */
+        }
+    </script>
+</body>
+</html>

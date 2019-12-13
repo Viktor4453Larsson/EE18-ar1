@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hund Gif</title>
+    <link rel="stylesheet" href="../style/style.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Omvandla Temperaturen</h1>
+        <h2>Input</h2>
+        <label>Ange temperatur i Celcius</label>
+        <input type="text">
+        <button onclick="omvandla()">Skicka</button>
+        <h2>Output</h2>
+        <p>Resultat</p>
+        <meter min="0" max="100" low="33" high="66" optimum="80" value="0"></meter></div>
+    <script>
+        const elementInput = document.querySelector("input");
+        const elementP = document.querySelector("p");
+        const elementMeter = document.querySelector("meter");
+
+
+        /* Läs in temperatur i Celsius  */
+        function omvandla() {
+            var celsius = elementInput.value;
+            
+            var farenheit = celsius * 9 / 5 + 32;
+
+            elementP.textContent = celsius + "\xB0; Celsius är " + celsius + farenheit + "\xB0;  farenheit ";
+            elementMeter.value = farenheit;
+        }
+    </script>
+</body>
+</html>
