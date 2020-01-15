@@ -4,25 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>Åldersgräns</title>
+    <title>När då då?</title>
     <link rel="stylesheet" href="spel.css">
 </head>
 <body>
     <div class="kontainer">
         <h1>När då då?</h1>
+
         <h3>Frågan</h3>
         <textarea cols="30" rows="10">När delas diamtbollen ut till den första kvinnliga fotbollsspelaren?</textarea>
 
         <label>Gissa året</label>
-        <input type="text" value="1990"> 
-        <button>Skicka</button>
+        <input id="årtal" type="text">
+        <button id="skicka">Skicka</button>
 
-        <h3>Svar</h3>   
-      <i class="fa fa-thumbs-o-up"></i>
-      <i class="fa fa-thumbs-o-down"></i>
-      <button>Nästa fråga >></button>
+        <h3>Poäng</h3>
+        <input id="poäng" type="text" readonly>
+
+        <h3>Svar</h3>
+        <i id="upp" class="fa fa-thumbs-o-up"></i>
+        <i id="ner" class="fa fa-thumbs-o-down"></i>
+        <button id="nästa">Nästa fråga >></button>
 
     </div>
-    <script defer src="./sverige.js"></script>
+    <script defer src="./spel.js"></script>
 </body>
 </html>
