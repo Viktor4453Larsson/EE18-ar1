@@ -1,8 +1,0 @@
-Get tre exempel på god praxis inom webb.
-Hur kontrollerar du din kod?
-Skriv ditt svar i en fil teori.txt som du lägger i webbroten
-
-1. Tre stycken vanliga praxis eller som alla borde göra regler när man jobbar med webbutveckling är små bokstäver, inga mellanrum och inga å:n,ä:n eller ö:n
-
-
-2. Vi har olika kodverifigerare som kan man säga har en databas med korrektkod om den inte stämmer överens så får vi ett eller fler "error" messages som beskriver vad som ska förändras för en korrekt kod detta gäller oavsett programmeringsspråk. I visual studio code så är den här funktionen redan inbyggd. 
