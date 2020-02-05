@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Boknings formulär</title>
+    <!-- Länka alltid in bootstrap före din CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./bokning.css">
+</head>
+<body>
+    <!-- Bootstrap är ett vanligt ramverk (färdig css) -->
+    <!-- Audit KOM IHÅG!!! -->
+
+    <div class="kontainer">
+        <h1>Förfrågan om Rumsbokning</h1>
+        <!-- Lägger in formatrammar -->
+        <fieldset>
+            <!-- Text ovanför rammarna -->
+            <legend>Val av rum</legend>
+            <input type="radio" name="rum" id="enkelrum" checked value="300">
+            <label for="enkelrum">Enkelrum 300kr</label> <br>
+            <input type="radio" name="rum" id="dubbel-rum" value="450">
+            <label for="dubbel-rum">Dubbel-rum 450kr</label> <br>
+            <input type="radio" name="rum" id="lyxhytt" value="800">
+            <label for="lyxhytt">Lyxhytt 800kr</label> <br>
+            Kostnader pär dygn
+        </fieldset>
+        <fieldset>
+            <legend>Antal nätter</legend>
+            <select name="nätter" id="nat" class="form-control form-control-sm">
+                <option value="1">1 natt</option>
+                <option value="2">2 nätter</option>
+                <option value="3">3 nätter</option>
+                <option value="4">4 nätter</option>
+                <option value="5">5 nätter</option>
+                <option value="6">6 nätter</option>
+                <option value="7">1 vecka</option>
+                <option value="14">2 veckor</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Tillägg</legend>
+            <input type="checkbox" name="tillägg" id="wifi" value="50">
+            <label for="wifi">Snabb wifi 50 kr</label> <br>
+            <input type="checkbox" name="tillägg" id="frukost" checked value="300">
+            <label for="frukost">Frukost 300 kr</label> <br>
+            <input type="checkbox" name="tillägg" id="tv" value="100">
+            <label for="tv">Bättre tv 100 kr</label> <br>
+        </fieldset>
+        <fieldset>
+            <legend>Kampanjkod</legend>
+            Om du har en kampanjkod stoppa in den här. <br>
+            <input type="text" name="kod" id="kampanjkod" class="form-control">
+        </fieldset>
+        <fieldset>
+            <legend>Totalpris</legend>
+            <p>Dina val ger en kostnad på 0 kr.</p>
+            <button class="btn btn-info">Beräkna kostnad</button>
+        </fieldset>
+    </div>
+    <!-- Ser till att js laddar in sist -->
+    <script defer src="./bokning.js"></script>
+</body>
+</html>
