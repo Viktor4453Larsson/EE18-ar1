@@ -1,0 +1,13 @@
+.container-2 {
+    border: 1px solid yellow;
+    width: 65%;
+    margin: 0 auto;
+    text-align: center;
+}
+.flex-box.container-2 {
+    display: flex;
+    border: 2px solid green;
+}
+.img {
+    width: 10px;
+}

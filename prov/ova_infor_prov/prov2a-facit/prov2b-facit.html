@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Prov2b</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./prov2b-facit.css">
+</head>
+<body>
+    <div class="kontainer">
+        <h1>Mixit</h1>
+        <h3>Input</h3>
+        <div class="grid">
+            <label>Välj ett tal (1-10)</label>
+            <input class="form-control" id="tal" type="text">
+            <label>Välj ett djur (plural)</label>
+            <input class="form-control" id="djur" type="text">
+            <label>Välj en stad</label>
+            <input class="form-control" id="stad" type="text">
+            <label>Välj ett adjektiv</label>
+            <input class="form-control" id="adjektiv" type="text">
+
+            <br><button class="btn btn-primary" id="mixa">Mixa</button>
+            <br><button class="btn btn-success" id="föreslå">Föreslå</button>
+        </div>
+
+        <h3>Output</h3>
+        <p id="output"></p>
+        <p class="alert alert-warning" id="varning"></p>
+    
+        <script defer src="./prov2b-facit.js"></script>
+    </div>
+</body>
+</html>

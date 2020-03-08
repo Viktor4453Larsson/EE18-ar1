@@ -1,0 +1,26 @@
+body {
+    background: #656e89;
+    font-family: sans-serif;
+}
+.kontainer {
+    width: 600px;
+    margin: 100px auto;
+    padding: 30px;
+    background-color: #c5ebf1;
+    border-radius: 5px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+label {
+    width: 250px;
+    display: inline-block;
+    margin: 10px 0;
+}
+p {
+    background: #FFF;
+    padding: 20px;
+    border-radius: 3px;
+}
