@@ -1,49 +1,47 @@
-/* Alla interaktiva element */
 const elementTal = document.querySelector("#tal");
 const elementDjur = document.querySelector("#djur");
 const elementStad = document.querySelector("#stad");
 const elementAdjektiv = document.querySelector("#adjektiv");
-const elementMixa  = document.querySelector("#mixa");
+const elementMixa = document.querySelector("#mixa");
 const elementFöreslå = document.querySelector("#föreslå");
-const elementOutput = document.querySelector("output");
+const elementOutput = document.querySelector("#output");
+const elementVarning = document.querySelector("#varning");
 
+var tillfälligtTal;
+var tillfälligtDjur;
+var tillfälligtStad;
+var tillfälligtAdjektiv;
 
-/* Vad som ska hända efter man trycker på Mixa */
-elementMixa.addEventListener("click", skapaMening);
+elementMixa.addEventListener("click", displayText);
+elementFöreslå.addEventListener("click", föreslåText); 
 
-function skapaMening() {
-    var summa = Number(elementTal.value);
-    var art = elementDjur.value;
-    var plats = elementStad.value;
-    var beskrivning = elementAdjektiv.value;
-    //var elementOutput = mening.value;
+function displayText() {
+    elementVarning.innerHTML = "";
+    tillfälligtTal = elementTal.value;
+    tillfälligtDjur = elementDjur.value;
+    tillfälligtStad = elementStad.value;
+    tillfälligtAdjektiv = elementAdjektiv.value;
 
-    console.log(summa);
+    if (tillfälligtTal == 0 || tillfälligtTal > 10) {
+        elementVarning.innerHTML += "Talet saknas <br>";
 
-    if (summa < 1) {
-        elementTal.value = "Talet får inte vara lägre än 1.";  
-      }
-      
-      if (summa > 10) {
-          elementTal.textContent = "Talet får högst vara 10.";
-      }
+    }
+    if (tillfälligtDjur == "") {
+        elementVarning.innerHTML += "Djur saknas <br>";
 
-      if (art = "") {
-          elementDjur.textContent = "Djuren saknas.";
-      }
+    }
+    if (tillfälligtStad == "") {
+        elementVarning.innerHTML += "Stad saknas <br>";
 
-      if (plats = "") {
-          elementStad.textContent = "Staden saknas.";
-      }
-      if (beskrivning = "") {
-          elementAdjektiv.textContent = "Adjektivet saknas.";
-      }
-      function varden() {
-       elementMixa = summa + art + plats + beskrivning + elementOutput; 
+    }
+    if (tillfälligtAdjektiv == "") {
+        elementVarning.innerHTML += "Adjektiv saknas <br>";
 
-       elementOutput.innerHTML = "Från Malmö går resan till" + plats + "Kvällen var" + beskrivning + "Staden var stor med massor av" + art + "och jag var" + beskrivning + "På kvällen låste jag in mina" + summa + "väskor i förvaringen.";
-      }
+    } else {
+        elementOutput.innerHTML = "Från " + tillfälligtStad + " går resan till Malmö kvällen var " + tillfälligtAdjektiv + ". staden var stor med massor av " + tillfälligtDjur + ", och jag var " + tillfälligtAdjektiv + ". på kvällen låste jag in mina " + tillfälligtTal + " väskor i förvaringen";
 
-     
+    }
 }
-
+function föreslåText() {
+var randomTal = Math.floor(1+Math.random()*10);  
+}
