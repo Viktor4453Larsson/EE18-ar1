@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Canvas</title>
+    <link rel="stylesheet" href="./pikachu.css">
+</head>
+<body>
+<div class="pilar">
+    <button id="höger">&RightArrow;<br>
+        <button id="vänster">&LeftArrow;</button>   
+</div>
+  
+    <canvas></canvas>
+    <script>
+        /* ****************************** */
+        /*        Ställ in canvas         */
+        /* ****************************** */
+        const eCanvas = document.querySelector("canvas");
+        eCanvas.width = 1200;
+        eCanvas.height = 1000;
+        var ctx = eCanvas.getContext("2d");
+
+        /* ****************************** */
+        /*    Variabler och objekt        */
+        /* ****************************** */
+        var cookieMonster = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var cheburashka = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var herbie = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var humanHead = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var jetpackJoyride = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var kermit = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var sonic = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var mario = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var walterWhite = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        var morpheus = {
+            x: Math.random() * 1200,
+            y: 0,
+            bild: new Image()
+        }
+        /* Laddda in bilderna */
+        cookieMonster.bild.src = "./bilder/ikoner/icons8-cookie-monster-50.png";
+
+        cheburashka.bild.src = "./bilder/ikoner/icons8-cheburashka-50.png";
+
+        herbie.bild.src = "./bilder/ikoner/icons8-herbie-50.png";
+
+        humanHead.bild.src = "./bilder/ikoner/icons8-human-head-50.png";
+
+        jetpackJoyride.bild.src =
+            "./bilder/ikoner/icons8-jetpack-joyride-50.png";
+
+        kermit.bild.src = "./bilder/ikoner/icons8-kermit-the-frog-50.png";
+
+        sonic.bild.src = "./bilder/ikoner/icons8-sonic-the-hedgehog-50.png";
+
+        mario.bild.src = "./bilder/ikoner/icons8-super-mario-50.png";
+
+        walterWhite.bild.src = "./bilder/ikoner/icons8-walter-white-50.png";
+
+        morpheus.bild.src = "./bilder/icons8-morpheus-96.png";
+        /* ****************************** */
+        /*            Funktioner          */
+        /* ****************************** */
+
+        function ritaCookiemonster() {
+            ctx.drawImage(cookieMonster.bild, cookieMonster.x, cookieMonster.y);
+        }
+
+        function ritaCheburashka() {
+            ctx.drawImage(cheburashka.bild, cheburashka.x, cheburashka.y);
+        }
+
+        function ritaHerbie() {
+            ctx.drawImage(herbie.bild, herbie.x, herbie.y);
+        }
+
+        function ritaHumanHead() {
+            ctx.drawImage(humanHead.bild, humanHead.x, humanHead.y);
+        }
+
+        function ritaJetPackJoyRide() {
+            ctx.drawImage(jetpackJoyride.bild, jetpackJoyride.x, jetpackJoyride.y);
+        }
+
+        function ritaKermit() {
+            ctx.drawImage(kermit.bild, kermit.x, kermit.y);
+        }
+
+        function ritaSonic() {
+            ctx.drawImage(sonic.bild, sonic.x, sonic.y);
+        }
+
+        function ritaMario() {
+            ctx.drawImage(mario.bild, mario.x, mario.y);
+        }
+
+        function ritaWalterWhite() {
+            ctx.drawImage(walterWhite.bild, walterWhite.x, walterWhite.y);
+        }
+
+        function ritaMorpheus() {
+            ctx.drawImage(morpheus.bild, morpheus.x, morpheus.y);
+        }
+        /* Animationsloopen */
+        function loopen() {
+
+            /* Sudda ut canvas */
+
+            ctx.clearRect(0, 0, 1200, 1200);
+
+            /* Ökar värdet på x */
+            requestAnimationFrame(loopen);
+            cookieMonster.y += 3;
+            ritaCookiemonster();
+
+            requestAnimationFrame(loopen);
+            cheburashka.y += 5;
+            ritaCheburashka();
+
+            requestAnimationFrame(loopen);
+            herbie.y += 2;
+
+            ritaCheburashka();
+            requestAnimationFrame(loopen);
+            humanHead.y += 7;
+
+            ritaCheburashka();
+            requestAnimationFrame(loopen);
+            jetpackJoyride.y += 5;
+
+            ritaCheburashka();
+            requestAnimationFrame(loopen);
+            kermit.y += 8;
+
+            ritaCheburashka();
+            requestAnimationFrame(loopen);
+            sonic.y += 2;
+
+            ritaCheburashka();
+            requestAnimationFrame(loopen);
+            mario.y += 2;
+
+            ritaCheburashka();
+            requestAnimationFrame(loopen);
+            walterWhite.y += 5;
+
+            ritaMorpheus();
+            requestAnimationFrame(loopen);
+            morpheus.y += 5;
+        }
+
+
+
+
+        /* ****************************** */
+        /*     Starta animationsloopen    */
+        /* ****************************** */
+        loopen();
+
+        ritaCheburashka();
+
+        ritaHerbie();
+
+        ritaHumanHead();
+
+        ritaCookiemonster();
+
+        ritaJetPackJoyRide();
+
+        ritaKermit();
+
+        ritaSonic();
+
+        ritaMario();
+
+        ritaWalterWhite();
+
+        ritaMorpheus();
+
+        /* Knapp för att flytta figurera till vänster och höger */
+
+        
+        
+    </script>
+</body>
+</html>
