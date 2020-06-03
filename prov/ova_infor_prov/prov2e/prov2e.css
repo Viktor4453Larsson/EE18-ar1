@@ -1,0 +1,66 @@
+K2 - prov2e
+
+Karim Ryde
+2 juni (Redigerad 09:33)
+
+prov2e.css
+Formatmall
+
+prov2e.html
+HTML
+
+prov2e.js
+JavaScript
+Klasskommentarer
+Ditt arbete
+Tilldelad
+Privata kommentarer
+
+
+@import url("https://fonts.googleapis.com/css?family=Caveat|Permanent+Marker&display=swap");
+
+body {
+    background: #cacacacc;
+    background: url("https://unsplash.com/photos/CNdkwbntaIE/download?force=true&w=1920");
+    background-size: 100%;
+}
+.kontainer {
+    background: #b4d6bd;
+    width: 600px;
+    padding: 2em;
+    margin: 10px auto;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 1px black;
+    color: #555;
+    font-family: "Roboto", cursive;
+}
+h1, h2, h3, h4 {
+    margin-top: 20px;
+}
+h5 {
+    margin: 0;
+}
+.grid31 {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 10px;
+    align-items: center;
+}
+.grid11 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+label {
+    margin: 0;
+}
+p {
+    background: #e1f7ff;
+    padding: 10px;
+    border-radius: 3px;
+    font-style: italic;
+    border: 1px solid #ccc;
+}
+p.total {
+    background: #affdc3;
+}
